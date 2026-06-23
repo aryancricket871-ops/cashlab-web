@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashLab - Task & Earn Rewards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0d0714;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(13, 7, 20, 0.9);
+            border-bottom: 1px solid #3B1D70;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #b388ff;
+            text-shadow: 0 0 10px rgba(179, 136, 255, 0.5);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: radial-gradient(circle at center, #3B1D70 0%, #0d0714 70%);
+        }
+
+        .badge {
+            background: #ffcc00;
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+            animation: pulse 2s infinite;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #b388ff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: #a0a0a0;
+            font-size: 16px;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #7c4dff, #3f51b5);
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            display: inline-block;
+            box-shadow: 0 5px 20px rgba(124, 77, 255, 0.5);
+            transition: 0.3s;
+            border: 1px solid #b388ff;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(124, 77, 255, 0.8);
+        }
+
+        /* Steps Section */
+        .steps {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .step-container {
+            background: #1a1025;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border-left: 4px solid #7c4dff;
+        }
+
+        .step-container h3 {
+            color: #b388ff;
+            margin-bottom: 10px;
+        }
+
+        .step-container p {
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        /* Features Grid */
+        .features {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #140b1f;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #3B1D70;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #b388ff;
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(124, 77, 255, 0.2);
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .reward {
+            color: #00e676;
+            font-weight: 700;
+            font-size: 18px;
+            margin-top: 10px;
+            display: block;
+        }
+
+        /* CTA Section */
+        .cta {
+            text-align: center;
+            padding: 60px 20px;
+            background: #1a1025;
+            border-top: 1px solid #3B1D70;
+        }
+
+        .cta h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #a0a0a0;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #08040d;
+            color: #555;
+            font-size: 14px;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 32px; }
+            .btn { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CashLab</div>
+    </header>
+
+    <section class="hero">
+        <div class="badge">🚀 COMING SOON</div>
+        <h1>CashLab: Task & Earn Rewards</h1>
+        <p>The ultimate app to earn real money by playing games, watching videos, and completing simple tasks.</p>
+        <!-- YouTube Link inside the button -->
+        <a href="https://youtube.com/@aryan420vip-8.7?si=XRL1tO0JkmREJC6T" class="btn">Download APK (Get Notified)</a>
+    </section>
+
+    <section class="steps">
+        <h2 class="section-title">How CashLab Works</h2>
+        <div class="step-container">
+            <h3>1. Secure Login</h3>
+            <p>Create your free CashLab account securely using your unique username and password.</p>
+        </div>
+        <div class="step-container">
+            <h3>2. Complete Daily Tasks</h3>
+            <p>Browse through multiple high-paying offers, watch videos, or play premium games.</p>
+        </div>
+        <div class="step-container">
+            <h3>3. Maintain Your Streak</h3>
+            <p>Log in 7 days in a row to hit the ultimate streak bonus and multiply your daily earnings.</p>
+        </div>
+        <div class="step-container">
+            <h3>4. Instant Withdrawal</h3>
+            <p>Enter your UPI, Paytm, or Bank Details and withdraw instantly once you reach ₹100.</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 class="section-title">App Features</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Watch Videos</h3>
+                <p>Stream short videos and earn instant coins straight to your wallet.</p>
+                <span class="reward">+₹10 Reward</span>
+            </div>
+            <div class="card">
+                <h3>Play Games</h3>
+                <p>Download and play trending games like Coin Master to unlock massive rewards.</p>
+                <span class="reward">+₹60 Reward</span>
+            </div>
+            <div class="card">
+                <h3>Complete Surveys</h3>
+                <p>Give your feedback on high-paying premium survey walls.</p>
+                <span class="reward">+₹40 Reward</span>
+            </div>
+            <div class="card">
+                <h3>Live Chat Support</h3>
+                <p>Direct access to our support team inside the app to solve any withdrawal issues instantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Subscribe to Our Official Channel</h2>
+        <p>Join the Cash Lab Task Earning App Official community for daily updates, payment proofs, and early APK access links!</p>
+        <a href="https://youtube.com/@aryan420vip-8.7?si=XRL1tO0JkmREJC6T" class="btn" style="background: #ff0000; border-color: #cc0000;">Subscribe on YouTube</a>
+    </section>
+
+    <footer>
+        &copy; 2026 CashLab - Task & Earn Rewards. All rights reserved.
+    </footer>
+
+</body>
+</html>
